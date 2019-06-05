@@ -1,6 +1,5 @@
-let chai = require('chai');
-let assert = chai.assert;
-
+const chai = require('chai');
+const assert = chai.assert;
 
 function josephus(items, k) {
 
