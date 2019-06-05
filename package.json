@@ -1,0 +1,19 @@
+{
+  "name": "joseph",
+  "version": "1.0.0",
+  "main": "Joseph.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
+  "description": "find out who will expire first!",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
+}
