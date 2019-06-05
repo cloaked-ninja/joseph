@@ -23,4 +23,3 @@ function josephus(items, k) {
     return result;
 }
 
-module.exports = josephus();

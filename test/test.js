@@ -36,11 +36,11 @@ describe('Josephus function tests', function () {
     it('should return [\'e\', \'s\', \'W\', \'o\', \'C\', \'d\', \'r\', \'a\']', function () {
         assert.deepEqual(josephus(["C", "o", "d", "e", "W", "a", "r", "s"], 4), ['e', 's', 'W', 'o', 'C', 'd', 'r', 'a']);
     });
-    it('should return ', function () {
+    it('should return [3, 6, 2, 7, 5, 1, 4]', function () {
         assert.deepEqual(josephus([1, 2, 3, 4, 5, 6, 7], 3), [3, 6, 2, 7, 5, 1, 4]);
     });
-    it('should return', function () {
-        assert.deepEqual(josephus([], 3), [],);
+    it('should return []', function () {
+        assert.deepEqual(josephus([], 3), []);
     });
 
 });
