@@ -1,10 +1,8 @@
 let chai = require('chai');
-
 let assert = chai.assert;
 
 
-
-/*function josephus(items, k) {
+function josephus(items, k) {
 
     let result = [];
     // terminate early if the k value is 1, because it won't affect the returning array
@@ -27,24 +25,25 @@ let assert = chai.assert;
     }
     console.log(result);
     return result;
-};*/
+}
+
+describe('Josephus function tests', function () {
+    it('should return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]', function () {
+        assert.deepEqual(josephus([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 1), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+    });
+    it('should return [2, 4, 6, 8, 10, 3, 7, 1, 9, 5]', function () {
+        assert.deepEqual(josephus([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 2), [2, 4, 6, 8, 10, 3, 7, 1, 9, 5]);
+    });
+    it('should return [\'e\', \'s\', \'W\', \'o\', \'C\', \'d\', \'r\', \'a\']', function () {
+        assert.deepEqual(josephus(["C", "o", "d", "e", "W", "a", "r", "s"], 4), ['e', 's', 'W', 'o', 'C', 'd', 'r', 'a']);
+    });
+    it('should return ', function () {
+        assert.deepEqual(josephus([1, 2, 3, 4, 5, 6, 7], 3), [3, 6, 2, 7, 5, 1, 4]);
+    });
+    it('should return', function () {
+        assert.deepEqual(josephus([], 3), [],);
+    });
+
+});
 
 
-
-
-//assert.equals(josephus([1,2,3,4,5,6,7,8,9,10],1),[1,2,3,4,5,6,7,8,9,10].toString());
-
-/*Test.assertSimilar(josephus([1,2,3,4,5,6,7,8,9,10],1),[1,2,3,4,5,6,7,8,9,10]);
-Test.assertSimilar(josephus([1,2,3,4,5,6,7,8,9,10],2),[2, 4, 6, 8, 10, 3, 7, 1, 9, 5]);
-Test.assertSimilar(josephus(["C","o","d","e","W","a","r","s"],4),['e', 's', 'W', 'o', 'C', 'd', 'r', 'a']);
-Test.assertSimilar(josephus([1,2,3,4,5,6,7],3),[3, 6, 2, 7, 5, 1, 4]);
-Test.assertSimilar(josephus([],3),[]);*/
-
-
-/*
-Test.assertSimilar(josephus([1,2,3,4,5,6,7,8,9,10],1),[1,2,3,4,5,6,7,8,9,10]);
-Test.assertSimilar(josephus([1,2,3,4,5,6,7,8,9,10],2),[2, 4, 6, 8, 10, 3, 7, 1, 9, 5]);
-Test.assertSimilar(josephus(["C","o","d","e","W","a","r","s"],4),['e', 's', 'W', 'o', 'C', 'd', 'r', 'a']);
-Test.assertSimilar(josephus([1,2,3,4,5,6,7],3),[3, 6, 2, 7, 5, 1, 4]);
-Test.assertSimilar(josephus([],3),[]);
-*/
